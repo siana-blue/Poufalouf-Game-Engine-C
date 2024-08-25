@@ -1,0 +1,8 @@
+$GUI_BORDER
+[IDLE]
+img=graphics\gui\border.png
+1;1;1;1
+$GUI_TEXTBOX
+[IDLE]
+img=graphics\gui\cadre_large.png
+1;1;1;1

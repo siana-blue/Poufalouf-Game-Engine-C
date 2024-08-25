@@ -1,0 +1,181 @@
+Opérations en cours
+-------------------
+
+
+-------------------
+
+ 
+--- Valgrind configuration de base ---
+
+==2025== HEAP SUMMARY:
+==2025==     in use at exit: 105,424 bytes in 696 blocks
+==2025==   total heap usage: 246,763 allocs, 246,067 frees, 123,409,779 bytes allocated
+==2025== 
+==2025== LEAK SUMMARY:
+==2025==    definitely lost: 862 bytes in 8 blocks
+==2025==    indirectly lost: 1,728 bytes in 38 blocks
+==2025==      possibly lost: 0 bytes in 0 blocks
+==2025==    still reachable: 102,834 bytes in 650 blocks
+==2025==         suppressed: 0 bytes in 0 blocks
+==2025== Rerun with --leak-check=full to see details of leaked memory
+==2025== 
+==2025== For counts of detected and suppressed errors, rerun with: -v
+==2025== Use --track-origins=yes to see where uninitialised values come from
+==2025== ERROR SUMMARY: 2 errors from 1 contexts (suppressed: 3 from 3)
+
+Ordinateur fixe
+
+==3788== LEAK SUMMARY:
+==3788==    definitely lost: 281,254 bytes in 97 blocks
+==3788==    indirectly lost: 254,862 bytes in 218 blocks
+==3788==      possibly lost: 24,137 bytes in 10 blocks
+==3788==    still reachable: 141,320 bytes in 880 blocks
+==3788==         suppressed: 0 bytes in 0 blocks
+==3788== Reachable blocks (those to which a pointer was found) are not shown.
+==3788== To see them, rerun with: --leak-check=full --show-reachable=yes
+TRES VARIABLE !!!!!!!!!
+
+
+
+--- Fichiers ---
+
+
+
+<<< General >>>
+
+
+
+gen.h
+
+main.cpp
+
+noncopyable.h
+
+enum.h
+serializable.h
+
+instructionreader.h	instructionreader.cpp
+
+multiphases.h		multiphases.cpp
+
+datapackage.h		datapackage.cpp
+
+errors.h		errors.cpp
+
+misc.h			misc.cpp
+
+launcher.h		launcher.cpp
+
+eventhandler.h		eventhandler.cpp
+
+
+
+<<< Manipulation des librairies >>>
+
+
+
+glfunc.h		glfunc.cpp
+
+glimage.h		glimage.cpp
+
+pngtoglloader.h		pngtoglloader.cpp
+
+fmodfunc.h		fmodfunc.cpp
+
+
+
+<<< Outils divers >>>
+
+
+
+geometry.h		geometry.cpp
+
+animation.h		animation.cpp
+
+gui.h			gui.cpp
+wad.h			wad.cpp
+
+textures.h		textures.cpp
+graphics.h		graphics.cpp
+
+camera.h		camera.cpp
+
+
+
+<<< MVC >>>
+
+
+
+||| General |||
+
+
+
+abstractmodel.h		abstractmodel.cpp
+
+abstractview.h		abstractview.cpp
+
+abstractcontroller.h	abstractcontroller.cpp
+
+modelitem.h		modelitem.cpp
+
+viewable.h		viewable.cpp
+
+mvcsystem.h		mvcsystem.cpp
+
+
+
+||| GL |||
+
+
+
+glmodel.h		glmodel.cpp
+
+glview.h		glview.cpp
+
+glcontroller.h		glcontroller.cpp
+
+glitem.h		glitem.cpp
+
+
+
+||| Menu |||
+
+
+
+menumodel.h		menumodel.cpp
+
+menucontroller.h	menucontroller.cpp
+
+menumvcsystem.h		menumvcsystem.cpp
+
+
+
+||| Map |||
+
+
+
+mapmodel.h		mapmodel.cpp
+
+mapcontroller.h		mapcontroller.cpp
+
+mapmvcsystem.h		mapmvcsystem.cpp
+
+map.h			map.cpp
+
+mapobject.h		mapobject.cpp
+
+mob.h			mob.cpp
+grass.h			grass.cpp
+jungle.h		jungle.cpp
+
+
+
+||| Map Editor |||
+
+
+
+mapeditormodel.h	mapeditormodel.cpp
+
+mapeditorcontroller.h	mapeditorcontroller.cpp
+
+mapeditormvcsystem.h	mapeditormvcsystem.cpp

@@ -1,0 +1,21 @@
+Save=Enregistrer
+
+Save as=Enregistrer sous
+
+Overwrite=Ecraser
+
+New map=Nouvelle map
+
+Converting=Conversion de
+
+Map Properties=Propri‚t‚s de la map
+Ground type=Type de sol
+Map links=Liens de map
+Add=Ajouter
+Remove=Retirer
+Back to map properties=Retour aux propri‚t‚s de la map
+Object Properties=Propri‚t‚s de l'objet
+Script Editor=Editeur de script
+Script=Script
+Entry=Entr‚e
+:= :

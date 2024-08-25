@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="PfMedia" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="pfmedia" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Debug/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="pfmedia" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Release/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add directory="inc" />
+			<Add directory="../PfMisc/inc" />
+			<Add directory="../../../lib/FMOD/inc" />
+			<Add directory="../../../lib/GnuWin32/include" />
+			<Add directory="../../../lib/SDL2/include" />
+		</Compiler>
+		<Linker>
+			<Add option="-lopengl32" />
+		</Linker>
+		<Unit filename="eventhandler.cpp" />
+		<Unit filename="fmodfunc.cpp" />
+		<Unit filename="geometry.cpp" />
+		<Unit filename="glfunc.cpp" />
+		<Unit filename="glimage.cpp" />
+		<Unit filename="graphics.cpp" />
+		<Unit filename="inc/eventhandler.h" />
+		<Unit filename="inc/fmodfunc.h" />
+		<Unit filename="inc/geometry.h" />
+		<Unit filename="inc/glfunc.h" />
+		<Unit filename="inc/glimage.h" />
+		<Unit filename="inc/graphics.h" />
+		<Unit filename="inc/media_gen.h" />
+		<Unit filename="inc/mediahandler.h" />
+		<Unit filename="inc/pngtoglloader.h" />
+		<Unit filename="media_gen.cpp" />
+		<Unit filename="mediahandler.cpp" />
+		<Unit filename="pngtoglloader.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

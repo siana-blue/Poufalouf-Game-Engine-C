@@ -1,0 +1,10 @@
+$PUT
+obj=GUI_LABEL1
+crd=0.3;0.57;0.4;0.02
+txt=CHARGEMENT
+$PUT
+obj=GUI_PROGRESSBAR
+crd=0.1;0.35;0.8;0.2
+val=10;0;0.0;0.0
+lyt=1(1;1)
+dyn=0

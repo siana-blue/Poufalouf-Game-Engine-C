@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="game" />
+		<Option makefile="makefile" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Option virtualFolders="Map\;Map\MapObject\;Menu\;Obj\;Main\;" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/game" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/game" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="../../../lib/SDL2/include/" />
+			<Add directory="../../../lib/FMOD/inc" />
+			<Add directory="../../../lib/GnuWin32/include" />
+			<Add directory="../../lib/PfMisc/inc" />
+			<Add directory="../../lib/PfMedia/inc" />
+			<Add directory="../../lib/PfMVC/inc" />
+			<Add directory="../../lib/PfGLGame/inc" />
+		</Compiler>
+		<Linker>
+			<Add library="../../lib/PfGLGame/libpfglgame.a" />
+			<Add library="../../lib/PfMVC/libpfmvc.a" />
+			<Add library="../../lib/PfMedia/libpfmedia.a" />
+			<Add library="../../lib/PfMisc/libpfmisc.a" />
+			<Add library="../../../lib/FMOD/libfmodex.a" />
+			<Add library="../../../lib/GnuWin32/lib/libpng.lib" />
+			<Add library="../../../lib/SDL2/lib/libSDL2main.a" />
+			<Add library="../../../lib/SDL2/lib/libSDL2.dll.a" />
+			<Add library="opengl32" />
+		</Linker>
+		<Unit filename="src/fence.cpp">
+			<Option virtualFolder="Map/MapObject/" />
+		</Unit>
+		<Unit filename="src/fence.h">
+			<Option virtualFolder="Map/MapObject/" />
+		</Unit>
+		<Unit filename="src/gen.h">
+			<Option virtualFolder="Main/" />
+		</Unit>
+		<Unit filename="src/grass.cpp">
+			<Option virtualFolder="Map/MapObject/" />
+		</Unit>
+		<Unit filename="src/grass.h">
+			<Option virtualFolder="Map/MapObject/" />
+		</Unit>
+		<Unit filename="src/jungle.cpp">
+			<Option virtualFolder="Map/MapObject/" />
+		</Unit>
+		<Unit filename="src/jungle.h">
+			<Option virtualFolder="Map/MapObject/" />
+		</Unit>
+		<Unit filename="src/launcher.cpp">
+			<Option virtualFolder="Obj/" />
+		</Unit>
+		<Unit filename="src/launcher.h">
+			<Option virtualFolder="Obj/" />
+		</Unit>
+		<Unit filename="src/main.cpp">
+			<Option virtualFolder="Main/" />
+		</Unit>
+		<Unit filename="src/map.cpp">
+			<Option virtualFolder="Map/" />
+		</Unit>
+		<Unit filename="src/map.h">
+			<Option virtualFolder="Map/" />
+		</Unit>
+		<Unit filename="src/mapbackground.cpp">
+			<Option virtualFolder="Map/" />
+		</Unit>
+		<Unit filename="src/mapbackground.h">
+			<Option virtualFolder="Map/" />
+		</Unit>
+		<Unit filename="src/mapcontroller.cpp">
+			<Option virtualFolder="Map/" />
+		</Unit>
+		<Unit filename="src/mapcontroller.h">
+			<Option virtualFolder="Map/" />
+		</Unit>
+		<Unit filename="src/mapeditorcontroller.cpp">
+			<Option virtualFolder="Map/" />
+		</Unit>
+		<Unit filename="src/mapeditorcontroller.h">
+			<Option virtualFolder="Map/" />
+		</Unit>
+		<Unit filename="src/mapeditormodel.cpp">
+			<Option virtualFolder="Map/" />
+		</Unit>
+		<Unit filename="src/mapeditormodel.h">
+			<Option virtualFolder="Map/" />
+		</Unit>
+		<Unit filename="src/mapeditormvcsystem.cpp">
+			<Option virtualFolder="Map/" />
+		</Unit>
+		<Unit filename="src/mapeditormvcsystem.h">
+			<Option virtualFolder="Map/" />
+		</Unit>
+		<Unit filename="src/mapmodel.cpp">
+			<Option virtualFolder="Map/" />
+		</Unit>
+		<Unit filename="src/mapmodel.h">
+			<Option virtualFolder="Map/" />
+		</Unit>
+		<Unit filename="src/mapmvcsystem.cpp">
+			<Option virtualFolder="Map/" />
+		</Unit>
+		<Unit filename="src/mapmvcsystem.h">
+			<Option virtualFolder="Map/" />
+		</Unit>
+		<Unit filename="src/mapobject.cpp">
+			<Option virtualFolder="Map/MapObject/" />
+		</Unit>
+		<Unit filename="src/mapobject.h">
+			<Option virtualFolder="Map/MapObject/" />
+		</Unit>
+		<Unit filename="src/mapzone.cpp">
+			<Option virtualFolder="Map/" />
+		</Unit>
+		<Unit filename="src/mapzone.h">
+			<Option virtualFolder="Map/" />
+		</Unit>
+		<Unit filename="src/menucontroller.cpp">
+			<Option virtualFolder="Menu/" />
+		</Unit>
+		<Unit filename="src/menucontroller.h">
+			<Option virtualFolder="Menu/" />
+		</Unit>
+		<Unit filename="src/menumodel.cpp">
+			<Option virtualFolder="Menu/" />
+		</Unit>
+		<Unit filename="src/menumodel.h">
+			<Option virtualFolder="Menu/" />
+		</Unit>
+		<Unit filename="src/menumvcsystem.cpp">
+			<Option virtualFolder="Menu/" />
+		</Unit>
+		<Unit filename="src/menumvcsystem.h">
+			<Option virtualFolder="Menu/" />
+		</Unit>
+		<Unit filename="src/mob.cpp">
+			<Option virtualFolder="Map/MapObject/" />
+		</Unit>
+		<Unit filename="src/mob.h">
+			<Option virtualFolder="Map/MapObject/" />
+		</Unit>
+		<Unit filename="src/portal.cpp">
+			<Option virtualFolder="Map/MapObject/" />
+		</Unit>
+		<Unit filename="src/portal.h">
+			<Option virtualFolder="Map/MapObject/" />
+		</Unit>
+		<Unit filename="src/sign.cpp">
+			<Option virtualFolder="Map/MapObject/" />
+		</Unit>
+		<Unit filename="src/sign.h">
+			<Option virtualFolder="Map/MapObject/" />
+		</Unit>
+		<Unit filename="src/textures.cpp">
+			<Option virtualFolder="Obj/" />
+		</Unit>
+		<Unit filename="src/textures.h">
+			<Option virtualFolder="Obj/" />
+		</Unit>
+		<Unit filename="src/wad.cpp">
+			<Option virtualFolder="Obj/" />
+		</Unit>
+		<Unit filename="src/wad.h">
+			<Option virtualFolder="Obj/" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+			<DoxyBlocks>
+				<comment_style block="0" line="0" />
+				<doxyfile_project />
+				<doxyfile_build />
+				<doxyfile_warnings />
+				<doxyfile_output />
+				<doxyfile_dot />
+				<general />
+			</DoxyBlocks>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

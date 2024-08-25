@@ -1,0 +1,52 @@
+Les layers sont les plans de perspective des images telles qu'elles doivent être rendues par une vue.
+Plus le layer est élevé, plus l'image sera proche du premier plan.
+
+Cette gestion des plans de perspective est géré par la vue, au travers de la méthode AbstractView::display.
+C'est cette méthode qui trie les Viewable à afficher par layer, en appelant la méthode AbstractView::displayViewable sur les Viewable par ordre croissant de layer.
+Un Viewable composé de plusieurs autres Viewable sera traité comme un groupe de Viewable indépendants. Ainsi, si un Viewable de layer 3 contient deux Viewable de layers 6, la vue considèrera simplement avoir 3 Viewable différents et les affichera dans l'ordre 3 puis 6, en intercalant éventuellement d'autres Viewable entre temps.
+
+
+Gestion des layers (du plus proche de la vue vers le plus éloigné)
+------------------------------------------------------------------
+
+Viewable : champ m_layer  <------ il s'agit de la valeur qui sera considérée par la vue
+Il n'est pas possible de changer directement la valeur du layer par un setter. Il faut utiliser la méthode Viewable::changeLayer. Cette méthode vérifie si d'autres Viewable sont attachés à celui-ci, et dans ce cas, si leurs plans de perspective n'étaient pas identiques, la différence est conservée après modification.
+Par exemple, si un Viewable de layer 0 possède également deux Viewable de layers respectifs 2 et 3, et si on appelle sa méthode Viewable::changeLayer avec pour argument 4, le Viewable sera donc de layer 4 et les deux Viewable liés auront pour layers respectifs 6 et 7.
+(en pratique, ce n'est pas utilisé pour le moment)
+
+ModelItem : ne gère le layer qu'au travers de la méthode ModelItem::generateViewable. C'est dans cette méthode qu'il faut construire un Viewable en choisissant le layer à partir d'une donnée quelconque.
+
+Cas des GLItem
+**************
+
+GLItem : champ m_layer <------ il s'agit de la valeur qui servira à choisir le layer lors de la génération d'un Viewable
+
+Cas des éléments de GUI
+***********************
+
+Le layer est spécifié lors de la construction. Ce paramètre peut être transféré à la méthode PfWad::generateGLItem.
+
+Cas des MapObject
+*****************
+
+MapObject : par défaut le layer est égal à 0. Le constructeur ne permet pas de fixer une autre valeur. Ce sont les modèles de Map qui gèrent ce paramètre.
+
+PfWad : ne gère pas ce paramètre pour les MapObject car ceux-ci n'acceptent pas le paramètre dans leurs constructeurs.
+
+Map : méthode Map::addObject <------ force la valeur du layer du MapObject de sorte qu'il apparaisse au-dessus des cases sur lesquelles il se trouve. Si le layer de l'objet est déjà supérieur à cette valeur, alors rien n'est fait.
+
+MapModel : méthode MapModel::updateLayer, appelée par la méthode MapModel::moveObjects <------ à chaque mouvement d'un objet, celui-ci se voit réattribué une valeur de layer en fonction de la position de sa zone de collision (ou sa zone principale si l'objet est flottant)
+
+
+Les layers sur une map sont répartis de la sorte :
+	_ tout d'abord par "rangée", en considérant comme rangée une portion de taille MAP_STEP_SIZE
+	_ puis en hauteur, avec un plan vers l'avant pour chaque pas vers le haut.
+Le premier plan d'une map est MAP_LAYER.
+Ensuite, il existe donc, pour une map de taille maximale (à savoir MAP_MAX_LINES_COUNT), un nombre de layers égal à :
+MAP_MAX_LINES_COUNT*MAP_STEPS_PER_CELL*MAP_MAX_HEIGHT
+Tout au Nord de la carte, sur la dernière rangée et à Z = 0, le layer d'une case est donc égal à MAP_LAYER.
+Sur cette même rangée, à la hauteur MAP_MAX_HEIGHT, le layer est égal à MAP_LAYER + MAP_MAX_HEIGHT.
+Sur la première rangée tout au Sud, à Z = MAP_MAX_HEIGHT, le layer est égal au nombre maximal.
+
+
+

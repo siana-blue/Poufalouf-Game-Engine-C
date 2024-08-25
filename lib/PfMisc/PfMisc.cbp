@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="PfMisc" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="pfmisc" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Debug/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="pfmisc" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Release/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add directory="inc" />
+		</Compiler>
+		<Unit filename="datapackage.cpp" />
+		<Unit filename="errors.cpp" />
+		<Unit filename="inc/datapackage.h" />
+		<Unit filename="inc/enum.h" />
+		<Unit filename="inc/errors.h" />
+		<Unit filename="inc/instructionreader.h" />
+		<Unit filename="inc/misc.h" />
+		<Unit filename="inc/misc_gen.h" />
+		<Unit filename="inc/multiphases.h" />
+		<Unit filename="inc/noncopyable.h" />
+		<Unit filename="inc/serializable.h" />
+		<Unit filename="instructionreader.cpp" />
+		<Unit filename="misc.cpp" />
+		<Unit filename="misc_gen.cpp" />
+		<Unit filename="multiphases.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="PfGLGame" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Option virtualFolders="GUI\;" />
+		<Build>
+			<Target title="Debug">
+				<Option output="pfglgame" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Debug/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/pfglgame" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Release/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add directory="inc" />
+			<Add directory="../PfMisc/inc" />
+			<Add directory="../PfMedia/inc" />
+			<Add directory="../PfMVC/inc" />
+			<Add directory="../../../lib/SDL2/include" />
+		</Compiler>
+		<Unit filename="animation.cpp" />
+		<Unit filename="camera.cpp" />
+		<Unit filename="glcontroller.cpp" />
+		<Unit filename="glitem.cpp" />
+		<Unit filename="glmodel.cpp" />
+		<Unit filename="glview.cpp" />
+		<Unit filename="inc/animation.h" />
+		<Unit filename="inc/camera.h" />
+		<Unit filename="inc/glcontroller.h" />
+		<Unit filename="inc/glgame_gen.h" />
+		<Unit filename="inc/glitem.h" />
+		<Unit filename="inc/glmodel.h" />
+		<Unit filename="inc/glview.h" />
+		<Unit filename="inc/pfgui.h" />
+		<Unit filename="inc/pflayout.h">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="inc/pflist.h">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="inc/pfprogressbar.h">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="inc/pfscrollbar.h">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="inc/pfselectiongrid.h">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="inc/pfslidingcursor.h">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="inc/pfspinbox.h">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="inc/pftext.h">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="inc/pftextbox.h">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="inc/pfwidget.h">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="pflayout.cpp">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="pflist.cpp">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="pfprogressbar.cpp">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="pfscrollbar.cpp">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="pfselectiongrid.cpp">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="pfslidingcursor.cpp">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="pfspinbox.cpp">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="pftext.cpp">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="pftextbox.cpp">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="pfwidget.cpp">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,16 @@
+Ce dossier est décomposé en deux sous-parties.
+
+lib : les bibliothèques propres aux jeux Poufalouf utilisant ce moteur
+
+Les lib doivent être linkées de gauche à droite avec à gauche les lib qui nécessitent celles de droite.
+Typiquement l'ordre actuel dans un programme qui utilise toutes les pflib :
+libpfglgame -> libpfmvc -> libpfmedia -> libpfmisc
+
+La bibliothèque pfmisc est utilisée par tous les programmes, car elle contient des fonctions basiques telles que la conversion de nombres en textes. De ce fait, elle a été choisie pour contenir la documentation générique de politique de code. Ces règles sont définies dans la documentation mainpage du projet PfMisc.
+
+engine : les éléments du moteur de jeu, à savoir d'une part le moteur lui-même, dans le dossier 'game', et d'autre part les éditeurs de ressources, dans le dossier 'editor'.
+Chaque type de ressource est généré par un projet à part entière bénéficiant de son propres répertoire.
+
+
+
+
