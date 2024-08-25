@@ -8,3 +8,4 @@ lacdorange.wad
 lacdorange.txt
 engine/editor/wad/graphics/worlds/lacdorange/lac/*
 !engine/editor/wad/graphics/worlds/lacdorange/lac/0001.png
+!engine/game/res/wad/lacdorange.wad
