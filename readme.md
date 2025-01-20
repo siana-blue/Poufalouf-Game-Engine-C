@@ -1,9 +1,7 @@
 # Jeu Poufalouf, version C++
 
 Il s'agit d'un moteur de jeu, davantage qu'un jeu, c'est pourquoi j'avais fini par l'appeler "Engine".
-Comme à mon habitude, je m'amuse à concevoir un moteur et je ne finis pas le jeu... avec toutes ces briques que j'ai semées je finirai peut-être par faire quelques choses (oui je sème des briques).
-
-Mine de rien, ce moteur rend plutôt bien, et il est possible de concevoir ses propres maps. Il n'y a juste... rien à faire dedans pour l'instant.
+Le jeu n'est pas terminé, il n'y a pas d'objectif en tant que tel, mais la conception des maps fonctionne bien.
 
 Le dossier est séparé en plusieurs parties :
 
@@ -14,9 +12,9 @@ L'éditeur n'est pas l'éditeur de map qui est directement intégré à game, il
 
 Je stocke ce programme ici pour l'instant, mais il faut que je le reprenne, c'est dommage de l'avoir abandonné comme ça. Pour l'instant je ne m'attarde pas plus dessus et je le mets tel quel sur ce repository.
 
-Musique et sound design, textures, tout est maison (même les textes nuuuls sur les pancartes, j'étais encore un bébé c'est fou).
+Musique et sound design, textures, tout est maison.
 
-POUR JOUER, c'est game.exe dans /engine/game. La compilation est hasardeuse, je n'y arrive pas sous VS Code mais ça fonctionnait sous Codeblocks, je me repencherai sur tout ça avec une doc adaptée pour un futur commit (quand j'aurai le temps, quand je saurai où je vais en formation en 2025, quand j'aurai un boulot de DEV stable et bien payé, une maison et un labrador)
+POUR JOUER, c'est game.exe dans /engine/game. La compilation est hasardeuse, je n'y arrive pas sous VS Code mais ça fonctionnait sous Codeblocks, je me repencherai sur tout ça avec une doc adaptée pour un futur commit.
 
 ## Documentation
 
